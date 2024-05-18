@@ -1,0 +1,18 @@
+// Home Page Styles
+
+// Import variables and functions
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+// Import base styles
+@import "../base/reset";
+@import "../base/typography";
+
+// Import component styles
+@import "../components/buttons";
+
+// Import layout styles
+@import "../layout/header";
+@import "../layout/footer";
+
+// Add specific styles for the home page below

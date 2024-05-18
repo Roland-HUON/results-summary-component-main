@@ -1,0 +1,35 @@
+// Theme Styles
+
+// Import variables
+@import "../abstracts/_variables";
+
+// Define theme-specific styles here
+
+// Example: Set primary color
+$primary-color: #ff0000;
+
+// Example: Set secondary color
+$secondary-color: #00ff00;
+
+// Example: Set background color
+$background-color: #ffffff;
+
+// Example: Set text color
+$text-color: #000000;
+
+// Import other theme-specific stylesheets if needed
+
+// Example: Import button styles
+@import "../components/_buttons";
+
+// Example: Import header styles
+@import "../layout/_header";
+
+// Example: Import footer styles
+@import "../layout/_footer";
+
+// Example: Import home page styles
+@import "../pages/_home";
+
+// Example: Import vendor styles
+@import "../vendors/_bootstrap";
