@@ -23,6 +23,26 @@ main section {
   height: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+main section div {
+  padding: 40px;
+  height: fit-content;
+}
+main section .first-section {
+  background-color: blue;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .first-section .text-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .first-section .text-score p {
+  text-align: center;
 }
 
 * {
@@ -43,6 +63,26 @@ main section {
   height: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+main section div {
+  padding: 40px;
+  height: fit-content;
+}
+main section .first-section {
+  background-color: blue;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .first-section .text-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .first-section .text-score p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
