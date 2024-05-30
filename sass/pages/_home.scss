@@ -16,3 +16,15 @@
 @import "../layout/footer";
 
 // Add specific styles for the home page below
+main{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    section{
+        width: 50%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
