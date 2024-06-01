@@ -22,6 +22,7 @@ main{
     align-items: center;
     justify-items: center;
     section{
+        background-color: $White;
         width: 50%;
         height: 50%;
         display: grid;
@@ -39,14 +40,14 @@ main{
             align-items: center;
             gap: 30px;
             .rounded-score{
-                padding: 60px;
+                padding: 55px;
                 border-radius: 50%;
                 background: linear-gradient($Circle-color-1, $Circle-color-2);
                 p{
                     font-size: 12px;
                     line-height: 25px;
                     text-align: center;
-                    font-weight: $font-weight-2;
+                    font-weight: $font-weight-1;
                     color: $Light-lavender;
                     span{
                         font-size: 54px;
@@ -56,12 +57,22 @@ main{
                 }
             }
             .text-score{
+                padding: 20px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
                 p{
                     text-align: center;
+                    color: $Light-lavender;
+                    font-size: 14px;
                 }
+            }
+        }
+        .second-section{
+            h2{}
+            .attribute-score{
+                .score{}
             }
         }
     }

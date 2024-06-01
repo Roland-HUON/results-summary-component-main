@@ -1,17 +1,15 @@
 // Buttons
-//
-// This file contains styles for buttons and button variations.
+// Import variables and functions
+@import "../abstracts/variables";
+@import "../abstracts/functions";
 
-.button {
-  // Button styles go here
-}
-
-.button-primary {
-  // Primary button styles go here
-}
-
-.button-secondary {
-  // Secondary button styles go here
+// Import base styles
+@import "../base/reset";
+@import "../base/typography";
+button{
+  color: $White;
+  font-weight: $font-weight-2;
+  background-color: $Dark-gray-blue;
 }
 
 // Additional button variations can be added here
