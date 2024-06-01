@@ -32,11 +32,29 @@ main{
             height: fit-content;
         }
         .first-section{
-            background-color: blue;
+            background: linear-gradient($background-color-1, $background-color-2);
             border-radius: 25px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 30px;
+            .rounded-score{
+                padding: 60px;
+                border-radius: 50%;
+                background: linear-gradient($Circle-color-1, $Circle-color-2);
+                p{
+                    font-size: 12px;
+                    line-height: 25px;
+                    text-align: center;
+                    font-weight: $font-weight-2;
+                    color: $Light-lavender;
+                    span{
+                        font-size: 54px;
+                        font-weight: $font-weight-3;
+                        color: $White;
+                    }
+                }
+            }
             .text-score{
                 display: flex;
                 flex-direction: column;

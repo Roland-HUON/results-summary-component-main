@@ -3,6 +3,12 @@
   padding: 0;
   font-size: 18px;
   box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1 {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
 }
 
 * {
@@ -10,6 +16,12 @@
   padding: 0;
   font-size: 18px;
   box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1 {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
 }
 
 main {
@@ -30,11 +42,29 @@ main section div {
   height: fit-content;
 }
 main section .first-section {
-  background-color: blue;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+}
+main section .first-section .rounded-score {
+  padding: 60px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+main section .first-section .rounded-score p {
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(241, 100%, 89%);
+}
+main section .first-section .rounded-score p span {
+  font-size: 54px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
 }
 main section .first-section .text-score {
   display: flex;
@@ -50,6 +80,12 @@ main section .first-section .text-score p {
   padding: 0;
   font-size: 18px;
   box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1 {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
 }
 
 main {
@@ -70,11 +106,29 @@ main section div {
   height: fit-content;
 }
 main section .first-section {
-  background-color: blue;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+}
+main section .first-section .rounded-score {
+  padding: 60px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+main section .first-section .rounded-score p {
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(241, 100%, 89%);
+}
+main section .first-section .rounded-score p span {
+  font-size: 54px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
 }
 main section .first-section .text-score {
   display: flex;
