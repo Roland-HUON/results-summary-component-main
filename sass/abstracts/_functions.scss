@@ -1,2 +1,12 @@
 // This file is intentionally left blank.
 // Add your custom Sass functions here.
+$breakpoints:(
+    "tablet": 1024px,
+    "phone": 800px,
+);
+
+@mixin media-min($key){
+    @media (max-width: map-get($breakpoints, $key)){
+        & { @content; }
+    }
+}

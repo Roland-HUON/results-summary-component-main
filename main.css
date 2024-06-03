@@ -105,7 +105,12 @@ main {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: hsl(221, 100%, 96%);
+  background-color: hsl(0, 0%, 100%);
+}
+@media (max-width: 800px) {
+  main {
+    height: unset;
+  }
 }
 main section {
   background-color: hsl(0, 0%, 100%);
@@ -115,6 +120,18 @@ main section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  box-shadow: 15px 15px 10px hsl(221, 100%, 96%);
+}
+@media (max-width: 1024px) {
+  main section {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  main section {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 main section div {
   padding: 40px;
@@ -128,6 +145,12 @@ main section .first-section {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+@media (max-width: 800px) {
+  main section .first-section {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
 }
 main section .first-section .rounded-score {
   padding: 40px;
@@ -307,7 +330,12 @@ main {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: hsl(221, 100%, 96%);
+  background-color: hsl(0, 0%, 100%);
+}
+@media (max-width: 800px) {
+  main {
+    height: unset;
+  }
 }
 main section {
   background-color: hsl(0, 0%, 100%);
@@ -317,6 +345,18 @@ main section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  box-shadow: 15px 15px 10px hsl(221, 100%, 96%);
+}
+@media (max-width: 1024px) {
+  main section {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  main section {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 main section div {
   padding: 40px;
@@ -330,6 +370,12 @@ main section .first-section {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+@media (max-width: 800px) {
+  main section .first-section {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
 }
 main section .first-section .rounded-score {
   padding: 40px;

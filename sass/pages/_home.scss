@@ -21,7 +21,10 @@ main{
     display: grid;
     align-items: center;
     justify-items: center;
-    background-color: $Pale-blue;
+    background-color: $White;
+    @include media-min("phone"){
+        height: unset;
+    }
     section{
         background-color: $White;
         border-radius: 25px;
@@ -30,6 +33,14 @@ main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        box-shadow: 15px 15px 10px $Pale-blue;
+        @include media-min("tablet"){
+            width: 70%;
+        }
+        @include media-min("phone"){
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
         div{
             padding: 40px;
             height: fit-content;
@@ -42,6 +53,10 @@ main{
             flex-direction: column;
             align-items: center;
             gap: 30px;
+            @include media-min("phone"){
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
             .rounded-score{
                 padding: 40px;
                 height: 140px;
