@@ -9,6 +9,7 @@
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -38,6 +40,13 @@ button {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+button a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 * {
@@ -51,6 +60,7 @@ button {
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -69,6 +79,7 @@ h2 {
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -80,6 +91,13 @@ button {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+button a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 main {
@@ -87,20 +105,23 @@ main {
   display: grid;
   align-items: center;
   justify-items: center;
+  background-color: hsl(221, 100%, 96%);
 }
 main section {
   background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
   width: 50%;
-  height: 50%;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  gap: 10px;
 }
 main section div {
   padding: 40px;
   height: fit-content;
 }
 main section .first-section {
+  height: 100%;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 25px;
   display: flex;
@@ -109,11 +130,13 @@ main section .first-section {
   gap: 30px;
 }
 main section .first-section .rounded-score {
-  padding: 55px;
+  padding: 40px;
+  height: 140px;
   border-radius: 50%;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
 }
 main section .first-section .rounded-score p {
+  margin-top: 10px;
   font-size: 12px;
   line-height: 25px;
   text-align: center;
@@ -132,11 +155,70 @@ main section .first-section .text-score {
   align-items: center;
   gap: 15px;
 }
+main section .first-section .text-score h2 {
+  font-size: 30px;
+}
 main section .first-section .text-score p {
   text-align: center;
   color: hsl(241, 100%, 89%);
   font-size: 14px;
+  width: 85%;
 }
+main section .second-section {
+  height: 100%;
+}
+main section .second-section h2 {
+  color: hsl(224, 30%, 27%);
+  font-size: 20px;
+}
+main section .second-section .attribute-score {
+  padding: 20px 0;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+main section .second-section .attribute-score .score {
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+main section .second-section .attribute-score .score h3 {
+  font-weight: 500;
+}
+main section .second-section .attribute-score .score p {
+  font-weight: 500;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+main section .second-section .attribute-score .score p span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+main section .second-section .attribute-score .score:first-child {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+main section .second-section .attribute-score .score:first-child h3 {
+  color: hsl(0, 100%, 67%);
+}
+main section .second-section .attribute-score .score:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+main section .second-section .attribute-score .score:nth-child(2) h3 {
+  color: hsl(39, 100%, 56%);
+}
+main section .second-section .attribute-score .score:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+main section .second-section .attribute-score .score:nth-child(3) h3 {
+  color: hsl(166, 100%, 37%);
+}
+main section .second-section .attribute-score .score:last-child {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+main section .second-section .attribute-score .score:last-child h3 {
+  color: hsl(234, 85%, 45%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -148,6 +230,7 @@ main section .first-section .text-score p {
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -159,6 +242,13 @@ button {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+button a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 * {
@@ -172,6 +262,7 @@ button {
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -190,6 +281,7 @@ h2 {
 h1 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
+  font-size: 20px;
 }
 
 h2 {
@@ -201,6 +293,13 @@ button {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+button a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
 
 main {
@@ -208,20 +307,23 @@ main {
   display: grid;
   align-items: center;
   justify-items: center;
+  background-color: hsl(221, 100%, 96%);
 }
 main section {
   background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
   width: 50%;
-  height: 50%;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  gap: 10px;
 }
 main section div {
   padding: 40px;
   height: fit-content;
 }
 main section .first-section {
+  height: 100%;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 25px;
   display: flex;
@@ -230,11 +332,13 @@ main section .first-section {
   gap: 30px;
 }
 main section .first-section .rounded-score {
-  padding: 55px;
+  padding: 40px;
+  height: 140px;
   border-radius: 50%;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
 }
 main section .first-section .rounded-score p {
+  margin-top: 10px;
   font-size: 12px;
   line-height: 25px;
   text-align: center;
@@ -253,10 +357,68 @@ main section .first-section .text-score {
   align-items: center;
   gap: 15px;
 }
+main section .first-section .text-score h2 {
+  font-size: 30px;
+}
 main section .first-section .text-score p {
   text-align: center;
   color: hsl(241, 100%, 89%);
   font-size: 14px;
+  width: 85%;
+}
+main section .second-section {
+  height: 100%;
+}
+main section .second-section h2 {
+  color: hsl(224, 30%, 27%);
+  font-size: 20px;
+}
+main section .second-section .attribute-score {
+  padding: 20px 0;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+main section .second-section .attribute-score .score {
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+main section .second-section .attribute-score .score h3 {
+  font-weight: 500;
+}
+main section .second-section .attribute-score .score p {
+  font-weight: 500;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+main section .second-section .attribute-score .score p span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+main section .second-section .attribute-score .score:first-child {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+main section .second-section .attribute-score .score:first-child h3 {
+  color: hsl(0, 100%, 67%);
+}
+main section .second-section .attribute-score .score:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+main section .second-section .attribute-score .score:nth-child(2) h3 {
+  color: hsl(39, 100%, 56%);
+}
+main section .second-section .attribute-score .score:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+main section .second-section .attribute-score .score:nth-child(3) h3 {
+  color: hsl(166, 100%, 37%);
+}
+main section .second-section .attribute-score .score:last-child {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+main section .second-section .attribute-score .score:last-child h3 {
+  color: hsl(234, 85%, 45%);
 }
 
 /*# sourceMappingURL=main.css.map */

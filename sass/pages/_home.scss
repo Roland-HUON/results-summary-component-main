@@ -21,18 +21,21 @@ main{
     display: grid;
     align-items: center;
     justify-items: center;
+    background-color: $Pale-blue;
     section{
         background-color: $White;
+        border-radius: 25px;
         width: 50%;
-        height: 50%;
+        height: fit-content;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        gap: 10px;
         div{
             padding: 40px;
             height: fit-content;
         }
         .first-section{
+            height: 100%;
             background: linear-gradient($background-color-1, $background-color-2);
             border-radius: 25px;
             display: flex;
@@ -40,10 +43,12 @@ main{
             align-items: center;
             gap: 30px;
             .rounded-score{
-                padding: 55px;
+                padding: 40px;
+                height: 140px;
                 border-radius: 50%;
                 background: linear-gradient($Circle-color-1, $Circle-color-2);
                 p{
+                    margin-top: 10px;
                     font-size: 12px;
                     line-height: 25px;
                     text-align: center;
@@ -62,17 +67,69 @@ main{
                 flex-direction: column;
                 align-items: center;
                 gap: 15px;
+                h2{
+                    font-size: 30px;
+                }
                 p{
                     text-align: center;
                     color: $Light-lavender;
                     font-size: 14px;
+                    width: 85%;
                 }
             }
         }
         .second-section{
-            h2{}
+            height: 100%;
+            h2{
+                color: $Dark-gray-blue;
+                font-size: 20px;
+            }
             .attribute-score{
-                .score{}
+                padding: 20px 0;
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 10px;
+                .score{
+                    padding: 15px;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    h3{
+                        font-weight: $font-weight-1;
+                    }
+                    p{
+                        font-weight: $font-weight-1;
+                        color: $Dark-gray-blue-opacity;
+                        span{
+                            color: $Dark-gray-blue;
+                            font-weight: $font-weight-2;
+                        }
+                    }
+                }
+                .score:first-child{
+                    background-color: $Light-red-opacity;
+                    h3{
+                        color: $Light-red;
+                    }
+                }
+                .score:nth-child(2){
+                    background-color: $Orangey-yellow-opacity;
+                    h3{
+                        color: $Orangey-yellow;
+                    }
+                }
+                .score:nth-child(3){
+                    background-color: $Green-teal-opacity;
+                    h3{
+                        color: $Green-teal;
+                    }
+                }
+                .score:last-child{
+                    background-color: $Cobalt-blue-opacity;
+                    h3{
+                        color: $Cobalt-blue;
+                    }
+                }
             }
         }
     }

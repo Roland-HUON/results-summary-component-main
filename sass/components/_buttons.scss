@@ -10,6 +10,13 @@ button{
   color: $White;
   font-weight: $font-weight-2;
   background-color: $Dark-gray-blue;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 50px;
+  a{
+    text-decoration: none;
+    color: $White;
+  }
 }
 
 // Additional button variations can be added here

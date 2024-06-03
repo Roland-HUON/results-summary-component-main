@@ -26,19 +26,19 @@
         <div class="attribute-score">
           <div class="score">
             <h3>Reaction</h3>
-            <p><span>80</span>/100</p>
+            <p><span></span> / 100</p>
           </div>
           <div class="score">
             <h3>Memory</h3>
-            <p><span>92</span>/100</p>
+            <p><span></span> / 100</p>
           </div>
           <div class="score">
             <h3>Verbal</h3>
-            <p><span>61</span>/100</p>
+            <p><span></span> / 100</p>
           </div>
           <div class="score">
             <h3>Visual</h3>
-            <p><span>72</span>/100</p>
+            <p><span></span> / 100</p>
           </div>
         </div>
         <button><a href="#">Continue</a></button>
@@ -51,5 +51,17 @@
       Coded by <a href="#">Roland HUON</a>.
     </div>
   </footer>
+  <script>
+    fetch('data.json')
+      .then((response) => response.json())
+      .then((data) =>{
+        const score = document.querySelectorAll('.score'); 
+        // console.log(score);
+        score.forEach((element, index)=>{
+          element.querySelector('span').textContent = data[index].score;
+        })
+        // console.log(data)
+      })
+  </script>
 </body>
 </html>
